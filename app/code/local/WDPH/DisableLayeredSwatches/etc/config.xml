@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<WDPH_DisableLayeredSwatches>
+			<version>1.0.0</version>
+		</WDPH_DisableLayeredSwatches>
+	</modules>
+	<global>
+		<helpers>
+			<configurableswatches>
+				<rewrite>
+					<productlist>WDPH_DisableLayeredSwatches_Helper_Productlist</productlist>
+					<data>WDPH_DisableLayeredSwatches_Helper_Data</data>
+				</rewrite>
+			</configurableswatches>
+		</helpers>
+	</global>	
+</config>
