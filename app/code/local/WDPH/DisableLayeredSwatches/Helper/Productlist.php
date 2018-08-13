@@ -12,7 +12,7 @@ class WDPH_DisableLayeredSwatches_Helper_Productlist extends Mage_ConfigurableSw
             // First, set a new template for the attribute that should show as a swatch
             if ($layer = $block->getLayer()) {
                 foreach ($layer->getFilterableAttributes() as $attribute) {
-                    if (Mage::helper('configurableswatches')->attrIsSwatchType($attribute) && Mage::helper('configurableswatches')->attrIsSwatchTypeLayered($attribute)) {
+                    if (Mage::helper('configurableswatches')->attrIsSwatchTypeLayered($attribute)) {
                         $block->getChild($attribute->getAttributeCode() . '_filter')
                             ->setTemplate('configurableswatches/catalog/layer/filter/swatches.phtml');
                     }
